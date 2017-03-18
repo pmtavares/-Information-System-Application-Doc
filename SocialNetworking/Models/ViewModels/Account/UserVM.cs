@@ -14,7 +14,7 @@ namespace SocialNetworking.Models.ViewModels.Account
         [Required]
         public string FirstName { get; set; }
         [Required]
-        public string LasttName { get; set; }
+        public string LastName { get; set; }
         [Required]
         [DataType(DataType.EmailAddress)]
         public string EmailAddress { get; set; }
@@ -33,7 +33,7 @@ namespace SocialNetworking.Models.ViewModels.Account
         {
             this.Id = user.Id;
             this.FirstName = user.FirstName;
-            this.LasttName = user.LasttName;
+            this.LastName = user.LastName;
             this.EmailAddress = user.EmailAddress;
             this.Username = user.Username;
             this.Password = user.Password;

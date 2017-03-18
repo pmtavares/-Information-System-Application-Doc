@@ -13,6 +13,18 @@ namespace SocialNetworking
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("CreateAccount", "Account/CreateAccount", new
+            {
+                controller = "Account",
+                action = "CreateAccount"
+            });
+
+            routes.MapRoute("Account", "{username}", new
+            {
+                controller = "Account",
+                action = "Username"
+            });
+
             routes.MapRoute("Default", "", new
             {
                 controller = "Account",
