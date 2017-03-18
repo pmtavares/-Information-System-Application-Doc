@@ -5,6 +5,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
+/*This is a mirror of the created DB  
+ * 
+ */
 namespace SocialNetworking.Models.Data
 {
 
